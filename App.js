@@ -1,12 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Navbar from "./components/Navbar/Navbar";
-import LandingPage from "./components/Landing_Page/LandingPage";
-import Login from "./components/Login/Login";
-import SignUp from "./components/Sign_Up/SignUp";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import LandingPage from './Components/Landing_Page/LandingPage';
+import Login from './Components/Login/Login';
+import SignUp from './Components/Sign_Up/SignUp';
 
 function App() {
   /*return (

@@ -1,32 +1,27 @@
 import React from "react";
-import "./LandingPage.css";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
 
-const LandingPage = () => {
+const Navbar = () => {
   return (
-    <section className="hero-section">
-      <div className="flex-hero">
-        <h1>
-          Your Health <br />
-          <span className="text-gradient">Our Responsibility</span>
-        </h1>
+    <nav className="navbar">
+      <h3 className="logo">HealthCare</h3>
 
-        <div className="blob-cont">
-          <div className="blue blob"></div>
-        </div>
+      <ul className="nav-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
 
-        <div className="blob-cont">
-          <div className="blue1 blob"></div>
-        </div>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
 
-        <h4>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae
-          ducimus.
-        </h4>
-
-        <button className="button">Get Started</button>
-      </div>
-    </section>
+        <li>
+          <Link to="/signup">Sign Up</Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
-export default LandingPage;
+export default Navbar;
