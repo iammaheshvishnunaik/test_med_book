@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./Sign_Up.css">
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Create Account</h2>
+        <div class="existingMember">
+            Already a member? <span><a href="../Login/Login.html"> Login</a></span>
+        </div>
+        <form action="#" method="post">
+
+            <!-- Role -->
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+                <option value="">Select Role</option>
+                <option value="Patient">Patient</option>
+                <option value="Doctor">Doctor</option>
+            </select>
+
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your full name" 
+                required
+            >
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number</label>
+            <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="Enter your phone number" 
+                required
+            >
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                required
+            >
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password" 
+                required
+            >
+
+            <!-- Buttons -->
+            <button type="submit" class="btn-submit">Sign Up</button>
+            <button type="reset" class="btn-reset">Reset</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

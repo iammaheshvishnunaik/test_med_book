@@ -1,0 +1,51 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar Position & Background */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff8c8c;
+}
+
+/* Navigation Links Layout */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* Navigation Links Styling */
+.nav-links li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+/* Sign Up Button Styling */
+.signup-btn {
+    background-color: #ff8c8c;
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+/* Hover Effects */
+.nav-links li a:hover {
+    color: #ff8c8c;
+}

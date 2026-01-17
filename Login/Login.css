@@ -1,0 +1,116 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form container */
+.login-container {
+    background-color: #ffffff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff8c8c;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Password field wrapper */
+.password-wrapper {
+    position: relative;
+}
+
+/* Eye icon */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Input focus */
+input:focus {
+    outline: none;
+    border-color: #ff8c8c;
+}
+
+/* Forgot password */
+.forgot-password {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #ff8c8c;
+    text-decoration: none;
+}
+
+/* Login button */
+.btn-login {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #ff9a9a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.btn-login:hover {
+    background-color: #ff7f7f;
+}
+
+/* Sign up text */
+.signup-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-text a {
+    color: #ff8c8c;
+    text-decoration: none;
+    font-weight: bold;
+}
