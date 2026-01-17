@@ -9,7 +9,10 @@
 /* Page background */
 body {
     background-color: #f4f6f8;
-    height: 100vh;
+}
+
+.login-page {
+    min-height: calc(100vh - 70px); /* height minus navbar */
     display: flex;
     justify-content: center;
     align-items: center;

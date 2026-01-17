@@ -1,23 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";  // <-- change here
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h3 className="logo">HealthCare</h3>
+      <h3 className="logo">MedBook</h3>
 
       <ul className="nav-links">
         <li>
-          <Link to="/">Home</Link>
+          <NavLink 
+            to="/" 
+            end  // <-- exact match for root path
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Home
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/login">Login</Link>
+          <NavLink 
+            to="/login" 
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Login
+          </NavLink>
         </li>
 
         <li>
-          <Link to="/signup">Sign Up</Link>
+          <NavLink 
+            to="/signup" 
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+          >
+            Sign Up
+          </NavLink>
         </li>
       </ul>
     </nav>

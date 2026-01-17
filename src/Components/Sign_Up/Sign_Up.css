@@ -13,9 +13,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
-
+.login-page {
+    min-height: calc(100vh - 70px); /* height minus navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Form container */
 .signup-container {
     background-color: #ffffff;
